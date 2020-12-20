@@ -2,36 +2,36 @@
 // If there is no license, return an empty string
 
 function renderLicenseBadge(license) {
-  console.log("cool");
   if (!license) {
     return "";
   } else {
-    `![badge](https://img.shields.io/badge/license-${licenses}-<blue>)`;
+    "![badge](https://img.shields.io/badge/license-" + license + "-blue)";
   }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  console.log("cool1");
-
-  if (license === "MIT") {
-    ` [MIT](https://choosealicense.com/licenses/mit/)`;
-  } else if (license === "GNU GPLv3") {
-    `[GNUGPLv3](https://choosealicense.com/licenses/mit/)`;
-  } else if (license === "AGNU GPLv3") {
-    `[AGNUGPLv3](https://choosealicense.com/licenses/mit/)`;
-  } else if (license === "Mozilla") {
-    `[Mozilla](https://choosealicense.com/licenses/mit/)`;
+  if (license) {
+    return `https://choosealicense.com/licenses/` + license;
   } else {
     return "";
   }
 }
 
+const generateInstallation = (installText) => {
+  if (!installText) {
+    return "";
+  } else {
+    return `## Installation
+  ${installText}
+  `;
+  }
+};
+
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  console.log("cool2");
   if (!license) {
     return "";
   } else {
@@ -41,7 +41,6 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  console.log("cool3");
   return `# ${data.title}
  ## Description
   ${data.description}
@@ -52,9 +51,9 @@ function generateMarkdown(data) {
     * [Contributing](#contributers)
     * [Tests](#tests)
     * [Licences](#licenses)
-  
-    ##Installation
-     ${data.installation}
+    
+  ${generateInstallation(data.installation)}
+
 
     ## Usage
     ${data.usage}
@@ -62,16 +61,17 @@ function generateMarkdown(data) {
     ## Credits
     ${data.contributers}
     GitHub: [@${data.github}](https://github.com/${data.github})
+    Email:  [${data.email}](${data.email})
 
    ## Licences
+   This application is under the ${data.licenses} license
    
     ${renderLicenseBadge(data.licences)}
     ${renderLicenseLink(data.licenses)}
    ${renderLicenseSection(data.licenses)}
    
 
-    ## Badges
-     ${data.badges}
+  
 
      ## Tests
      ${data.tests}
