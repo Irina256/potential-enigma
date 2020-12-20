@@ -27,7 +27,7 @@
   Email:  [irina.skitayeva@gmail.com](irina.skitayeva@gmail.com)
 
 ## Licenses
-  This application is under the MIT license
+  This application is under:
 
   License: MIT
 

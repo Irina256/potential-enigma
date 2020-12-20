@@ -93,7 +93,7 @@ function generateMarkdown(data) {
   Email:  [${data.email}](${data.email})
 
 ## Licenses
-  This application is under the ${data.licenses} license
+  This application is under:
 
   ${renderLicenseBadge(data.licenses)}
 
