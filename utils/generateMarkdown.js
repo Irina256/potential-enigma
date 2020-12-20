@@ -3,7 +3,7 @@
 
 const renderLicenseBadge = (license) => {
   if (license) {
-    return `License: ${license};`;
+    return `License: ${license}`;
   } else {
     return "";
   }
@@ -13,7 +13,10 @@ const renderLicenseBadge = (license) => {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license) {
-    return `https://choosealicense.com/licenses/` + license;
+    return (
+      `
+    https://choosealicense.com/licenses/` + license
+    );
   } else {
     return "";
   }
@@ -32,10 +35,8 @@ const generateTests = (testImages) => {
   if (!testImages) {
     return "";
   } else {
-    return `Here is a screenshot of testing readme file generator
-    ![img1](./images/Screenshot 2020-12-20 173010.png)
-    ![img2](./images/Screenshot 2020-12-20 173352.png)
-  `;
+    return `Here is a screenshot of a readme file generator:
+     `;
   }
 };
 
@@ -86,13 +87,18 @@ function generateMarkdown(data) {
 
 ## Credits
   This application was developed by: ${data.contributors}
+
   GitHub: [${data.github}](https://github.com/${data.github})
+
   Email:  [${data.email}](${data.email})
 
 ## Licenses
   This application is under the ${data.licenses} license
+
   ${renderLicenseBadge(data.licenses)}
+
   ![badge](https://img.shields.io/badge/license-${data.licenses}-blue);
+  
   ${renderLicenseLink(data.licenses)}
 
   ${testsConfirm(data.tests)}
