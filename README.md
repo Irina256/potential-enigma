@@ -11,10 +11,9 @@
   * [Licenses](#licenses)
     
   
-  ## Installation
-   To use that app the user should clone it to his machine.
-    
-  
+## Installation
+    To use that app the user should clone it to his machine.
+      
 
 ## Usage
   This project is for anyone who wants a professional README.md file for his project!
@@ -36,7 +35,7 @@
   
     https://choosealicense.com/licenses/MIT
 
-  ## Tests
+## Tests
   Here is a screenshot of a readme file generator:
      
 

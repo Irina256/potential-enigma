@@ -27,7 +27,7 @@ const generateInstallation = (installText) => {
     return "";
   } else {
     return `## Installation
-   ${installText}
+    ${installText}
     `;
   }
 };
@@ -79,8 +79,7 @@ function generateMarkdown(data) {
   * [Tests](#tests)
   ${renderLicenseSection(data.licenses)}
   
-  ${generateInstallation(data.installation)}
-  
+${generateInstallation(data.installation)}  
 
 ## Usage
   ${data.usage}
@@ -101,7 +100,7 @@ function generateMarkdown(data) {
   
   ${renderLicenseLink(data.licenses)}
 
-  ${testsConfirm(data.tests)}
+${testsConfirm(data.tests)}
   ${generateTests(data.tests)}
 
 `;
