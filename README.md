@@ -13,9 +13,12 @@
   
 ## Installation
     To use that app the user should clone it to his machine.
-    ![image](https://github.com/Irina256/potential-enigma/blob/master/images/Screenshot%202020-12-20%20173010.png?raw=true)
+    ![image](https://github.com/Irina256/potential-enigma/blob/master/images/Screenshot%202020-12-20%20173010.png)
     
 ## Steps to follow
+To see the video follow the link:
+https://drive.google.com/file/d/1zNQ4mNVrUAURW18Bm11n7AVPehqgORl1/view?usp=sharing
+
 1. In the terminal run: ![image](https://github.com/Irina256/potential-enigma/blob/master/images/Screenshot%202020-12-20%20173352.png) 
 2. Answer the prompts
 3. Your Readme file is generated! Congratulations!!! :+1:
